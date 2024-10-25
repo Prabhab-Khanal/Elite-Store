@@ -1,0 +1,82 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container styling */
+.register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f0f8ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.register-container h2 {
+    color: #0074cc;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #0074cc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.register-container input[type="text"]:focus,
+.register-container input[type="email"]:focus,
+.register-container input[type="password"]:focus {
+    border-color: #005f99;
+}
+
+/* Button styling */
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #0074cc;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-container button:hover {
+    background-color: #005f99;
+}
+
+/* Link for "Forgot Password" */
+.forgot-password {
+    color: #0074cc;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover {
+    color: #005f99;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .register-container {
+        padding: 20px;
+    }
+}

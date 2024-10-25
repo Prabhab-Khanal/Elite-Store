@@ -1,0 +1,91 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container styling */
+.verify-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.verify-container h2 {
+    color: #333333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Input field styling */
+.verify-container input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.verify-container input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+/* Button styling */
+.verify-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.verify-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Cancel button styling */
+.cancel-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .verify-container {
+        padding: 20px;
+    }
+}
